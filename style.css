@@ -1,4 +1,62 @@
+/*100 italic, regular 400, SemiBold 600, Bold 700*/
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Viga', sans-serif;
+    color: var(--color-1);
+}
+
+/* TYPOGRAFIA */
+
 h1{
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 134.4px;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 53.76px;
+}
+
+p{
+    color: var(--color-5);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+/* ICONES */
+.my-icon{
     display: flex;
+    justify-content: center;
+
+    text-decoration: none;
+    font-size: 20px;
     align-items: center;
+    height: 50px;
+    width: 50px;
+    color: var(--color-1);
+
+    border: solid 2px var(--color-1);
+    border-radius: 50%;
+}
+
+/* BOTÕES */
+
+
+/* BLOCOS */
+
+.bloc01 {
+    margin-top: 10rem;
+    padding-left: 9rem;
+}
+
+/*--- VARIÁVEIS ---*/
+:root{
+    --color-1: #FD1874;
+    --color-2: #9A39FF;
+    --color-3: #2E005E;
+    --color-4: #212330;
+    --color-5: #212330;
 }
