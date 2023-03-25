@@ -1,35 +1,97 @@
 /*100 italic, regular 400, SemiBold 600, Bold 700*/
+body {
+    background-image: url("./Imgs/Union.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: initial;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Viga', sans-serif;
     color: var(--color-1);
 }
 
 /* TYPOGRAFIA */
 
-h1{
+h1 {
     font-size: 100px;
     font-weight: 400;
     line-height: 134.4px;
 }
 
-h2{
+h2 {
     font-size: 40px;
     font-weight: 400;
     line-height: 53.76px;
 }
 
-p{
+h3 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+p {
     color: var(--color-5);
     font-size: 30px;
     font-weight: 400;
     line-height: 40px;
 }
 
+a {
+    font-size: 18px;
+    color: var(--color-6);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-6);
+    border-bottom: solid 1px var(--color-6);
+    font-weight: 500;
+}
+
+.my-line {
+    border-bottom: 10px solid var(--color-1);
+    border-radius: 18px;
+    width: 78px;
+    margin-bottom: 20px;
+}
+
+.my-paragraph {
+    width: 600px;
+}
+
+/* .my-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-container img{
+    height: 550px;
+    width: 550px;
+} */
+
+li i {
+    /* tá limitado aos ícones dentro das listas */
+    color: var(--color-6);
+}
+
+section {
+    margin-top: 300px;
+}
+
 /* ICONES */
-.my-icon{
+.my-icon {
     display: flex;
     justify-content: center;
+    margin-right: 30px;
 
     text-decoration: none;
     font-size: 20px;
@@ -40,23 +102,42 @@ p{
 
     border: solid 2px var(--color-1);
     border-radius: 50%;
+
 }
 
 /* BOTÕES */
+.my-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
+    width: 285px;
+    height: 66px;
+    margin-top: 50px;
+
+    color: var(--color-6);
+    font-weight: 500;
+    font-size: 20px;
+
+    background-color: var(--color-1);
+    border: none;
+    border-radius: 16px;
+}
 
 /* BLOCOS */
 
-.bloc01 {
+.my-container {
     margin-top: 10rem;
     padding-left: 9rem;
 }
 
 /*--- VARIÁVEIS ---*/
-:root{
+:root {
     --color-1: #FD1874;
     --color-2: #9A39FF;
     --color-3: #2E005E;
     --color-4: #212330;
     --color-5: #212330;
+    --color-6: #FAFAFA;
 }
