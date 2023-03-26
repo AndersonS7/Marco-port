@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-****" crossorigin="anonymous" />
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet"> -->
     <!-- *** -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,7 +23,7 @@
     <nav class="navbar navbar-expand-lg navbar-light px-5">
         <div class="container-fluid mx-5 px-5">
 
-            <a class="navbar-brand" href="#">LOGO</a>
+            <a class="navbar-brand" href="#"><img src="./Imgs/Icon/logo.svg" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -84,12 +84,12 @@
 
         <section>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 my-section-about">
                     <div class="my-line"></div>
                     <h3>
                         Sobre mim
                     </h3>
-                    <p class="my-paragraph">
+                    <p class="mt-4" style="width: 712px;">
                         Me chamo Marcos Carlos sou Product Designer apaixonado por criar soluções, sempre tive uma
                         paixão
                         por tecnologia e design, o que me levou a estudar e seguir carreira nesta área.
@@ -101,34 +101,56 @@
                 </div>
                 <div class="col-md-6">
                     <div>
-                        <img src="./Imgs/Marcos2.svg" alt="Marcos Carlos">
+                        <img class="ajust-img" src="./Imgs/imagem marcos.svg" alt="Marcos Carlos">
                     </div>
                 </div>
             </div>
         </section>
-
-        <section>
-            <div class="row flex-column flex-md-row">
-                <div class="col-12 col-lg-6 col-md-6 mx-auto text-center">
-                    <div>
-                        <div class="my-line2"></div>
-                        <h3>
-                            Trabalhos
-                        </h3>
-                    </div>
-                    <p>
-                        Durante minha jornada de estudos tive a oportunidade de trabalhar em alguns projetos real que me
-                        proporcionou uma experiência incrível como Product Design.
-                    </p>
-                    <div class="my-content">
-                        <img src="./Imgs/Flashdog.svg" alt="primeiro projeto">
-                        <img src="./Imgs/Flashdog.svg" alt="primeiro projeto">
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </div>
+
+    <section>
+        <div class="row flex-column flex-md-row">
+            <div class="col-12 col-lg-8 col-md-8 mx-auto text-center my-section-jobs">
+                <div>
+                    <div class="my-line2"></div>
+                    <h3>
+                        Trabalhos
+                    </h3>
+                </div>
+                <p class="mx-auto mt-5" style="width: 930px;">
+                    Durante minha jornada de estudos tive a oportunidade de trabalhar em alguns projetos real que me
+                    proporcionou uma experiência incrível como Product Design.
+                </p>
+                <div class="d-flex mx-center">
+                    <img class="ajust-img-jobs" src="./Imgs/Flashdog.svg" alt="primeiro projeto">
+                    <img class="ajust-img-jobs" src="./Imgs/Flashdog.svg" alt="primeiro projeto">
+                </div>
+
+                <p class="mx-auto mt-5" style="width: 930px;">
+                    Todos os projetos estão disponíveis no meu portifólio, acesse para ver todos os projetos completos.
+                </p>
+
+                <a href="#" class="mx-auto my-button">Ver todos os  projetos</a>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="my-section-icons">
+            <div>
+                <img class="my-icon-jobs" src="./Imgs/Icon/letter-n.png" alt="notion">
+                <img class="my-icon-jobs" src="./Imgs/Icon/figma.png" alt="figma">
+                <img class="my-icon-jobs" src="./Imgs/Icon/html.png" alt="html">
+                <img class="my-icon-jobs" src="./Imgs/Icon/css-3.png" alt="css">
+                <img class="my-icon-jobs" src="./Imgs/Icon/illustrator.png" alt="ilustator">
+                <img class="my-icon-jobs" src="./Imgs/Icon/adobe-photoshop.png" alt="photoshop">
+                <img class="my-icon-jobs" src="./Imgs/Icon/vscode.png" alt="vscode">
+            </div>
+        </div>
+    </section>
+
+    
 
     <!-- SCRIPTS -->
     <script src="script.js"></script>
