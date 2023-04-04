@@ -16,7 +16,7 @@ body {
 
 @font-face {
     font-family: 'PPNeueMontreal-Bold';
-    src: url(./Fonts/PPNeue_Montreal/OTF/PPNeueMontreal-Bold.otf);
+    src: url(./assets/fonts/PPNeue_Montreal/OTF/PPNeueMontreal-Bold.otf);
 }
 
 h1,
