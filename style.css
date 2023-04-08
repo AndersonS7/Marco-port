@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("#");
+    background-image: url("./assets/imgs/Elementos/bg-rosa.svg");
     background-repeat: no-repeat;
     background-position: right top;
     background-size: initial;
@@ -28,6 +28,203 @@ h6 {
     font-family: 'PPNeueMontreal-Bold';
 }
 
+/* --- CONTAINER ---*/
+.my_container {
+    display: flex;
+    width: 85%;
+    height: 100vh;
+    margin: auto;
+    /* background-color: var(--color-2); */
+}
+
+/* --- NAV --- */
+nav ul li a,
+nav ul li i {
+    color: var(--color-6);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--color-6);
+    font-weight: bold;
+    border-bottom: 2px solid var(--color-6);
+}
+
+/* --- SECTION START ---*/
+.start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 228px;
+}
+
+.start h1,
+.start h2 {
+    color: var(--color-1);
+}
+
+.start h1 {
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 120px;
+}
+
+.start h2 {
+    font-size: 40;
+    line-height: 48px;
+}
+
+.start p {
+    color: var(--color-4);
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.start img {
+    width: 920px;
+    height: auto;
+    margin-left: 20%;
+    position: relative;
+    bottom: 100px;
+}
+
+/* SECTION ABOUNT */
+.about {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about h3 {
+    font-size: 60px;
+    line-height: 72px;
+    color: var(--color-1);
+}
+
+.about h3::before {
+    content: "";
+    display: block;
+    border-top: 10px solid var(--color-1);
+    width: 79px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+
+.about p {
+    width: 712px;
+    font-size: 36px;
+    line-height: 50px;
+    margin-top: 34px;
+    margin-bottom: 70px;
+}
+
+.about img {
+    width: 820px;
+    height: auto;
+    margin-left: 20%;
+    position: relative;
+    top: 50px;
+    right: 120px;
+    color: var(--color-4);
+}
+
+/* SECTION JOBS */
+.jobs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.jobs h3 {
+    font-size: 60px;
+    line-height: 72px;
+    color: var(--color-1);
+    padding-top: 200px;
+    text-align: center;
+}
+
+.jobs h3::before {
+    content: "";
+    display: block;
+    border-top: 10px solid var(--color-1);
+    width: 79px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+    margin-left: 47%;
+}
+
+.jobs p {
+    width: 930px;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    color: var(--color-5);
+    margin: auto;
+    margin-top: 48px;
+    margin-bottom: 50px;
+}
+
+.jobs a {
+    margin: auto;
+}
+
+.img_projects{
+    display: flex;
+    flex-direction: row;
+}
+
+.img_projects img {
+    width: 770px;
+    height: 520px;
+}
+
+/* --- SKILLS --- */
+#skills {
+    width: 100%;
+    height: 100vh;
+}
+
+.skills {
+    width: 100%;
+    height: 540;
+    background-color: var(--color-1);
+}
+
+
+/* --- ICONS  --- */
+.my_icon {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: var(--color-1);
+    border: 2px solid var(--color-1);
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-top: 28px;
+    padding-top: 1.4%;
+}
+
+/* --- BUTTONS  --- */
+.my_btn {
+    width: 285px;
+    height: 66px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-6);
+    background-color: var(--color-1);
+    margin-top: 50px;
+    border-radius: 16px;
+    padding: 18px 90px 18px 90px;
+}
+
+.my_btn:hover {
+    color: var(--color-6);
+}
+
 /*--- VARIÁVEIS ---*/
 :root {
     --color-1: #FD1874;
@@ -38,3 +235,9 @@ h6 {
     --color-6: #FAFAFA;
     --color-line: #21233054;
 }
+
+/* TELAS MENORES */
+
+/* @media(max-width: 765px){
+
+} */
