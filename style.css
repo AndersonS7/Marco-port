@@ -134,68 +134,147 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
-    margin-top: 250px;
-    background-color: red;
+    text-align: center;
+    margin: auto;
+    padding-top: 226px;
 }
 
 .jobs h3 {
     font-size: 60px;
     line-height: 72px;
     color: var(--color-1);
-    text-align: center;
 }
 
 .jobs h3::before {
     content: "";
     display: block;
-    border-top: 10px solid var(--color-1);
     width: 79px;
-    border-radius: 20px;
+    border-top: 10px solid var(--color-1);
+    border-radius: 18px;
     margin-bottom: 24px;
-    margin-left: 47%;
+    margin-left: 48%;
 }
 
 .jobs p {
     width: 930px;
-    font-size: 36px;
+    font-size: 35px;
     line-height: 50px;
-    text-align: center;
-    color: var(--color-5);
+    color: var(--color-4);
+    padding-top: 48px;
     margin: auto;
 }
 
 .jobs a {
     margin: auto;
+    margin-top: 50px;
 }
 
-.img_projects{
+.img_projects {
     display: flex;
     flex-direction: row;
 }
 
 .img_projects img {
     width: 770px;
-    height: 520px;
+    height: auto;
 }
 
 /* --- SKILLS --- */
 #skills {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #2E005E;
+    margin-top: 345px;
 }
 
 .skills {
     width: 100%;
-    height: 540;
+    height: 540px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: var(--color-1);
-    /* margin-top: 750px; */
 }
 
 .skills img {
     width: 122px;
-    height: auto;
+    height: 122px;
+}
+
+/* --- CALL ---  */
+.call {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.call h3 {
+    font-size: 64px;
+    line-height: 76px;
+    color: var(--color-1);
+}
+
+.call p {
+    font-size: 36px;
+    line-height: 43px;
+    color: var(--color-1);
+}
+
+.call a {
+    margin-top: 95px;
+}
+
+#img_call_x {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 70%;
+    right: 50%;
+}
+
+#img_call_square {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 70%;
+    left: 45%;
+    transform: rotate(45deg);
+}
+
+#img_call_triangle {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 12%;
+    right: 25%;
+    transform: rotate(95deg);
+}
+
+#img_call_c {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 8%;
+    left: 25%;
+    transform: rotate(220deg);
+}
+
+/* --- FOOTER ---  */
+footer {
+    width: 100%;
+    height: 536px;
+    border-top: 2px solid var(--color-line);
+    display: flex;
+    flex-direction: row;
+}
+
+footer #contact {
+    
 }
 
 /* --- ICONS  --- */
