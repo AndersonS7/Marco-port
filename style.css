@@ -489,7 +489,8 @@ footer #media {
     }
 }
 
-@media(max-width: 992px) {
+/* --- MOBILE --- */
+@media(max-width: 715px) {
     body {
         background-image: url("./assets/imgs/Elementos/bg-mobile-rosa.png");
         background-repeat: no-repeat;
@@ -500,6 +501,11 @@ footer #media {
         overflow-x: hidden;
     }
 
+    .custom-toggler {
+        border: none;
+    }
+
+    /* --- START --- */
     .my_container {
         display: flex;
         flex-direction: column;
@@ -512,11 +518,27 @@ footer #media {
         display: flex;
         flex-direction: column;
         width: 100%;
-        
+        padding-top: 60px;
     }
     
     .start h1, .start h2, .start p {
         color: var(--color-6);
+    }
+
+    .start h1 {
+        font-size: 60px;
+        line-height: 48px;
+    }
+
+    .start h2 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .start p {
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 20px;
     }
 
     .start .my_icon {
@@ -527,12 +549,67 @@ footer #media {
     }
 
     .start .my_btn {
+        width: 437px;
+        height: 75px;
+        font-size: 25px;
         background-color: var(--color-6);
         color: var(--color-1);
         font-weight: bold;
+        position: relative;
+        top: 550px;
+        left: 15%;
+        z-index: 1;
     }
 
     .start img {
-        width: 50%;
+        max-width: 620px;
+        height: auto;
+        margin: 0;
+        padding:0;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 100%;
+    }
+
+     /* --- ABOUNT --- */
+     .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+        padding-top: 90%;
+    }
+    
+    .about h3 {
+        font-size: 45px;
+        line-height: 60px;
+        color: var(--color-1);
+    }
+    
+    .about h3::before {
+        content: "";
+        display: block;
+        border-top: 8px solid var(--color-1);
+        width: 65px;
+        border-radius: 10px;
+    }
+    
+    .about p {
+        max-width: 650px;
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 34px;
+        margin-bottom: 70px;
+    }
+    
+    .about img {
+        src: url("./assets/imgs/mobile/azul.png");
+        width: 820px;
+        height: auto;
+        margin-left: 20%;
+        position: relative;
+        right: 120px;
+        bottom: 233px;
     }
 }
