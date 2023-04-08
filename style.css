@@ -94,6 +94,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding-top: 250px;
 }
 
 .about h3 {
@@ -124,9 +125,8 @@ nav ul li a:hover {
     height: auto;
     margin-left: 20%;
     position: relative;
-    top: 50px;
     right: 120px;
-    color: var(--color-4);
+    bottom: 233px;
 }
 
 /* SECTION JOBS */
@@ -134,16 +134,15 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center;
     width: 100%;
-    margin: auto;
+    margin-top: 250px;
+    background-color: red;
 }
 
 .jobs h3 {
     font-size: 60px;
     line-height: 72px;
     color: var(--color-1);
-    padding-top: 200px;
     text-align: center;
 }
 
@@ -164,8 +163,6 @@ nav ul li a:hover {
     text-align: center;
     color: var(--color-5);
     margin: auto;
-    margin-top: 48px;
-    margin-bottom: 50px;
 }
 
 .jobs a {
@@ -186,14 +183,20 @@ nav ul li a:hover {
 #skills {
     width: 100%;
     height: 100vh;
+    background-color: #2E005E;
 }
 
 .skills {
     width: 100%;
     height: 540;
     background-color: var(--color-1);
+    /* margin-top: 750px; */
 }
 
+.skills img {
+    width: 122px;
+    height: auto;
+}
 
 /* --- ICONS  --- */
 .my_icon {
