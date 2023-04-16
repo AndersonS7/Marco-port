@@ -241,7 +241,7 @@ nav ul li a:hover {
     position: relative;
     bottom: 70%;
     left: 45%;
-    transform: rotate(45deg);
+    transform: rotate(90deg);
 }
 
 #img_call_triangle {
@@ -250,7 +250,7 @@ nav ul li a:hover {
     position: relative;
     top: 12%;
     right: 25%;
-    transform: rotate(95deg);
+    transform: rotate(10deg);
 }
 
 #img_call_c {
@@ -259,7 +259,6 @@ nav ul li a:hover {
     position: relative;
     top: 8%;
     left: 25%;
-    transform: rotate(220deg);
 }
 
 /* --- FOOTER ---  */
@@ -599,14 +598,129 @@ footer #media {
     .about .my_btn {
         font-size: 16px;
         font-weight: bold;
-        width: 100%;
-        position: relative;
-        top: 165%;
+        width: 85%;
+        margin: auto;
+        position: absolute;
+        top: 188%;
     }
 
     .jobs {
         display: flex;
         flex-direction: column;
+        text-align: center;
+        padding-top: 180px;
+    }
+
+    .jobs h3 {
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+        line-height: 40px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .jobs h3::before {
+        width: 33px;
+        border-top: 5px solid var(--color-1);
+        border-radius: 18px;
+        margin-bottom: 15px;
+        margin-left: 45%;
+    }
+
+    .jobs p {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .jobs img {
+        width: 100%;
+    }
+
+    .jobs .img_projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .jobs .my_btn {
+        font-size: 16px;
+        font-weight: bold;
+        width: 100%;
+        background-color: transparent;
+        color: var(--color-1);
+        border: 2px solid var(--color-1);
+        padding-top: 4%;
+    }
+
+    /* --- skills --- */
+    #skills {
+        margin-top: 28%;
+        margin-top: 0;
+        height: 30%;
+        padding-top: 50%;
+    }
+
+    #skills img {
+        width: 10%;
+        height: auto;
+    }
+
+    /* --- msg --- */
+    .my_container h3 {
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        padding-bottom: 16px;
+    }
+
+    .my_container p {
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .my_container .call img {
+        width: 10px;
+        height: 10%;
+    }
+
+    .my_container .my_btn {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    #img_call_x {
+        height: 24px;
+        width: 24px;
+        position: relative;
+        bottom: 45%;
+    }
+
+    #img_call_square {
+        height: 24px;
+        width: 24px;
+        position: relative;
+        bottom: 48.5%;
+    }
+
+    #img_call_triangle {
+        height: 24px;
+        width: 24px;
+        position: relative;
+        right: 48%;
+        top: 0%;
+    }
+
+    #img_call_c {
+        height: 24px;
+        width: 24px;
+        position: relative;
+        left: 45%;
+        top: 0%;
     }
 }
 
