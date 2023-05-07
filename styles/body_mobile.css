@@ -1,0 +1,66 @@
+/* START CONTETN */
+.content_start {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.75rem;
+}
+
+.text_start h1 {
+    font-family: 'Viga', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: var(--color-white);
+}
+
+.text_start h2 {
+    font-family: 'Viga', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.224rem;
+    color: var(--color-white);
+}
+
+.text_start p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: var(--color-white);
+    margin-top: 0.25rem;
+}
+
+.container img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.container .my_btn1 {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 65%;
+    height: 3.5rem;
+    max-width: 100%;
+    background-color: var(--color-white);
+    border-radius: 0.625rem;
+    margin: auto;
+    position: relative;
+    bottom: 4.375rem;
+}
+
+.container .my_btn1 a {
+    text-decoration: none;
+    font-family: 'Viga', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.224rem;
+    color: var(--color-margenta);
+}
+
+/* ########################################## */
+:root {
+    --color-white: #FAFAFA;
+    --color-margenta: #FD1874;
+    --color-blue1: #212330;
+}

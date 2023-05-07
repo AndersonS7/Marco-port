@@ -1,0 +1,113 @@
+/* CSS GERAL */
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* OUTRAS FONTES */
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Viga', sans-serif; */
+
+/* FONTS CONFIG. */
+@font-face {
+    font-family: 'PPNeueMontreal-Light';
+    src: url("../assets/fonts/font2/NeueMontreal-Light.otf");
+}
+
+@font-face {
+    font-family: 'PPNeueMontreal-Regular';
+    src: url("../assets/fonts/font2/NeueMontreal-Regular.otf");
+}
+
+@font-face {
+    font-family: 'PPNeueMontreal-Medium';
+    src: url("../assets/fonts/font2/NeueMontreal-Medium.otf");
+}
+
+@font-face {
+    font-family: 'PPNeueMontreal-Bold';
+    src: url("../assets/fonts/font2/NeueMontreal-Bold.otf");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'PPNeueMontreal-Bold';
+}
+
+p {
+    font-family: 'PPNeueMontreal-Regular';
+}
+
+a {
+    font-family: 'PPNeueMontreal-light';
+}
+
+body {
+    background-image: url("./assets/imgs/Elementos/bg-rosa.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: initial;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.container {
+    padding-left: 11.25rem;
+    padding-right: 11.25rem;
+}
+
+/* ICONS */
+.media_content {
+    margin-bottom: 2.5rem;
+}
+
+.media_content h3 {
+    text-transform: uppercase;
+    font-family: 'PPNeueMontreal-Regular';
+    font-size: 1rem;
+    color: var(--color-blue1);
+    margin-top: 2.125rem;
+}
+
+.midia_ul1 {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.midia_ul1 li {
+    margin-right: 1rem;
+}
+
+.midia_ul1 li a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-margenta);
+}
+
+.midia_ul1 li a i {
+    width: 2.125rem;
+    height: 2.125rem;
+    padding-top: .5rem;
+    border: 0.094rem solid var(--color-margenta);
+    border-radius: 50%;
+}
+
+/* SOBREESCREVER AS CLASSES ANTERIORES */
+.midia_ul2 li a {
+    color: var(--color-white);
+}
+
+.midia_ul2 li a i{
+    color: var(--color-white);
+    border: 0.094rem solid var(--color-white);
+}

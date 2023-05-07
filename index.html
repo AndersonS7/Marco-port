@@ -12,10 +12,21 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 
-    <!-- fontes -->
+    <!-- biblioteca de icones (font-awesome) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-****" crossorigin="anonymous" />
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Viga&display=swap"
+        rel="stylesheet">
+
+    <!-- icones e css -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/menu.css">
+    <link rel="stylesheet" href="./styles/body_mobile.css">
 
 </head>
 
@@ -47,7 +58,7 @@
                 <!-- botão ativo no mobile -->
                 <div class="btn_mobile">
                     <button type="button" onclick="menuShow()">
-                        <i id="btn_mobile" class="fas fa-grip-lines btn_disabled"></i>
+                        <i id="btn_mobile_icon" class="fas fa-grip-lines btn_disabled"></i>
                     </button>
                 </div>
             </div>
@@ -86,28 +97,28 @@
 
                 <hr>
                 <br>
-                <div class="social_midia">
+                <div class="media_content">
                     <h3>mídia social</h3>
                     <br>
 
-                    <ul>
+                    <ul class="midia_ul1">
                         <li>
-                            <a class="" aria-current="page" href="#">
+                            <a aria-current="page" href="#">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                         </li>
                         <li>
-                            <a class="" aria-current="page" href="#">
+                            <a aria-current="page" href="#">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </li>
                         <li>
-                            <a class="" aria-current="page" href="#">
+                            <a aria-current="page" href="#">
                                 <i class="fab fa-behance"></i>
                             </a>
                         </li>
                         <li>
-                            <a class="" aria-current="page" href="#">
+                            <a aria-current="page" href="#">
                                 <i class="fab fa-dribbble"></i>
                             </a>
                         </li>
@@ -118,47 +129,47 @@
         </div>
     </nav>
 
-    <section>
-        <div class="">
-            <div>
+    <section id="start" class="container">
+        <div class="content_start">
+            <div class="text_start">
                 <h2>Olá, Me chamo</h2>
                 <h1>Marcos Carlos</h1>
                 <p>
                     Sou Product Designer apaixonado por criar soluções <br> que melhorem a qualidade de vida das
                     pessoas.
                 </p>
-
-                <div>
-                    <ul>
-                        <li>
-                            <a class="" aria-current="page" href="#">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="" aria-current="page" href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="" aria-current="page" href="#">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="" aria-current="page" href="#">
-                                <i class="fab fa-dribbble"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <a type="button" class="my_btn" href="#contact">Contate-me</a>
-
             </div>
 
-            <div>
-                <img src="./assets/imgs/web/rosa.png" alt="Marcos Carlos">
+            <div class="media_content">
+                <ul class="midia_ul1 midia_ul2">
+                    <li>
+                        <a aria-current="page" href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-current="page" href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-current="page" href="#">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-current="page" href="#">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <img src="./assets/imgs/web/rosa.png" alt="Marcos Carlos">
+            <div class="my_btn1">
+                <a type="button" href="#contact">Contate-me</a>
             </div>
         </div>
     </section>

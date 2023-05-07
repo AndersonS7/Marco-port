@@ -1,67 +1,4 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* FONTS CONFIG. */
-@font-face {
-    font-family: 'PPNeueMontreal-Light';
-    src: url("./assets/fonts/font2/NeueMontreal-Light.otf");
-}
-
-@font-face {
-    font-family: 'PPNeueMontreal-Regular';
-    src: url("./assets/fonts/font2/NeueMontreal-Regular.otf");
-}
-
-@font-face {
-    font-family: 'PPNeueMontreal-Medium';
-    src: url("./assets/fonts/font2/NeueMontreal-Medium.otf");
-}
-
-@font-face {
-    font-family: 'PPNeueMontreal-Bold';
-    src: url("./assets/fonts/font2/NeueMontreal-Bold.otf");
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'PPNeueMontreal-Bold';
-}
-
-p {
-    font-family: 'PPNeueMontreal-Regular';
-}
-
-a {
-    font-family: 'PPNeueMontreal-light';
-}
-
-/* ########################################## */
-
-body {
-    background-image: url("./assets/imgs/Elementos/bg-rosa.svg");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: initial;
-    padding: 0px;
-    margin: 0px;
-    overflow-x: hidden;
-}
-
-/* ########################################## */
-
-.container {
-    padding-left: 11.25rem;
-    padding-right: 11.25rem;
-}
-
+/* ESTILIZAÇÃO DO MENU (MOBILE E WEB) */
 .menu {
     display: flex;
     flex-direction: row;
@@ -89,7 +26,6 @@ body {
     color: var(--color-white);
 }
 
-
 /* MOBILE MENU */
 .btn_mobile {
     display: none;
@@ -104,45 +40,6 @@ body {
     border: none;
     font-size: 1.5rem;
     color: var(--color-white);
-}
-
-/* ICONS */
-.social_midia {
-    margin-bottom: 2.5rem;
-}
-
-.social_midia h3 {
-    text-transform: uppercase;
-    font-family: 'PPNeueMontreal-Regular';
-    font-size: 1rem;
-    color: var(--color-blue1);
-    margin-top: 2.125rem;
-}
-
-.social_midia ul {
-    max-width: 100%;
-    width: 100%;
-    display: flex;
-    list-style: none;
-    margin-top: 1rem;
-}
-
-.social_midia ul li {
-    margin-right: 1rem;
-}
-
-.social_midia ul li a {
-    text-align: center;
-    text-decoration: none;
-    color: var(--color-margenta);
-}
-
-.social_midia ul li a i {
-    width: 2.125rem;
-    height: 2.125rem;
-    padding-top: .4rem;
-    border: 2px solid var(--color-margenta);
-    border-radius: 50%;
 }
 
 @media screen and (max-width: 768px) {
@@ -226,21 +123,6 @@ body {
         color: var(--color-white);
     }
 }
-
-
-@media screen and (max-width: 393px) {
-    body {
-        background-image: url("./assets/imgs/Elementos/bg-mobile-rosa.png");
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: 24.563rem 60.5rem;
-        padding: 0px;
-        margin: 0px;
-        overflow-x: hidden;
-    }
-}
-
-
 
 /* ########################################## */
 :root {

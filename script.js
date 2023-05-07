@@ -1,6 +1,6 @@
 const logo = document.querySelector('#logo');
 const img_second = document.querySelector('#img_second');
-const btn_mobile = document.querySelector("#btn_mobile");
+const btn_mobile_icon = document.querySelector("#btn_mobile_icon");
 let mobileBtnOn = false;
 
 const observer = new ResizeObserver(entries => {
@@ -30,15 +30,15 @@ function menuShow() {
         menuMobile.classList.remove('open');
         mobileBtnOn = false;
 
-        btn_mobile.classList.add('btn_disabled');
-        btn_mobile.classList.remove('btn_enabled');
+        btn_mobile_icon.classList.add('btn_disabled');
+        btn_mobile_icon.classList.remove('btn_enabled');
 
     } else {
         menuMobile.classList.add('open');
         mobileBtnOn = true;
 
-        btn_mobile.classList.add('btn_enabled');
-        btn_mobile.classList.remove('btn_disabled');
+        btn_mobile_icon.classList.add('btn_enabled');
+        btn_mobile_icon.classList.remove('btn_disabled');
     }
 }
 
