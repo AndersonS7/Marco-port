@@ -58,6 +58,14 @@
     color: var(--color-margenta);
 }
 
+/* START CONTETN */
+.content_about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
 /* ########################################## */
 :root {
     --color-white: #FAFAFA;

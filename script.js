@@ -25,15 +25,18 @@ const observer = new ResizeObserver(entries => {
 
 function menuShow() {
     const menuMobile = document.querySelector('.menu_mobile');
+    const start = document.querySelector("#start");
 
     if (menuMobile.classList.contains('open')) {
         menuMobile.classList.remove('open');
+        start.removeAttribute("hidden")
         mobileBtnOn = false;
 
         btn_mobile_icon.classList.add('btn_disabled');
         btn_mobile_icon.classList.remove('btn_enabled');
 
     } else {
+        start.setAttribute("hidden", "true");
         menuMobile.classList.add('open');
         mobileBtnOn = true;
 
