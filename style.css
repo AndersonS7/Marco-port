@@ -45,7 +45,7 @@ a {
 
 /* ########################################## */
 
-/* body {
+body {
     background-image: url("./assets/imgs/Elementos/bg-rosa.svg");
     background-repeat: no-repeat;
     background-position: right top;
@@ -53,17 +53,13 @@ a {
     padding: 0px;
     margin: 0px;
     overflow-x: hidden;
-} */
+}
 
 /* ########################################## */
 
 .container {
     padding-left: 11.25rem;
     padding-right: 11.25rem;
-}
-
-body {
-    background-color: rgb(48, 46, 46);
 }
 
 .menu {
@@ -110,7 +106,56 @@ body {
     color: var(--color-white);
 }
 
+/* ICONS */
+.social_midia {
+    margin-bottom: 2.5rem;
+}
+
+.social_midia h3 {
+    text-transform: uppercase;
+    font-family: 'PPNeueMontreal-Regular';
+    font-size: 1rem;
+    color: var(--color-blue1);
+    margin-top: 2.125rem;
+}
+
+.social_midia ul {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.social_midia ul li {
+    margin-right: 1rem;
+}
+
+.social_midia ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-margenta);
+}
+
+.social_midia ul li a i {
+    width: 2.125rem;
+    height: 2.125rem;
+    padding-top: .4rem;
+    border: 2px solid var(--color-margenta);
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 768px) {
+    body {
+        background-image: url("./assets/imgs/Elementos/bg-mobile-rosa.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100%;
+        padding: 0px;
+        margin: 0px;
+        overflow-x: hidden;
+    }
+
     .container {
         margin: 0;
         padding: 0;
@@ -122,6 +167,10 @@ body {
         flex-direction: column;
     }
 
+    .menu_mobile {
+        height: 100vh;
+    }
+
     #menu_control_mobile {
         display: flex;
         flex-direction: row;
@@ -130,22 +179,24 @@ body {
         margin-bottom: 1.875rem;
     }
 
-    .menu_mobile ul{
+    .menu_mobile .menu_ul {
         margin-top: 1.875rem;
         margin-bottom: 7.813rem;
         list-style: none;
     }
 
-    .menu_mobile ul li {
+    .menu_mobile .menu_ul li {
         margin-top: 3.25rem;
     }
 
-    .menu_mobile ul li a {
+    .menu_mobile .menu_ul li a {
         text-decoration: none;
         color: var(--color-margenta);
+        font-size: 1.125rem;
+        font-family: 'PPNeueMontreal-Regular';
     }
 
-    .menu_mobile ul li i {
+    .menu_mobile .menu_ul li i {
         margin-right: 1.614rem;
         color: var(--color-margenta);
     }
@@ -166,7 +217,30 @@ body {
     .open {
         display: block;
     }
+
+    .btn_enabled {
+        color: var(--color-margenta);
+    }
+
+    .btn_disabled {
+        color: var(--color-white);
+    }
 }
+
+
+@media screen and (max-width: 393px) {
+    body {
+        background-image: url("./assets/imgs/Elementos/bg-mobile-rosa.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 24.563rem 60.5rem;
+        padding: 0px;
+        margin: 0px;
+        overflow-x: hidden;
+    }
+}
+
+
 
 /* ########################################## */
 :root {

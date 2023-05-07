@@ -19,14 +19,14 @@
 
 </head>
 
-<body>
+<body id="body">
     <nav class="container">
         <div class="menu">
             <div id="menu_control_mobile">
                 <div class="logo">
                     <a class="" href="#"><img id="logo" src="./assets/icons/logo.svg" alt="logo"></a>
                 </div>
-    
+
                 <div class="meu_list">
                     <ul>
                         <li class="">
@@ -43,34 +43,77 @@
                         </li>
                     </ul>
                 </div>
-    
+
+                <!-- botão ativo no mobile -->
                 <div class="btn_mobile">
                     <button type="button" onclick="menuShow()">
-                        <i class="fas fa-grip-lines"></i>
+                        <i id="btn_mobile" class="fas fa-grip-lines btn_disabled"></i>
                     </button>
                 </div>
             </div>
 
+            <!-- menu ativo no mobile -->
             <div class="menu_mobile">
                 <hr>
-                <ul>
-                    <li class="">
-                        <i class="fas fa-home"></i>
-                        <a href="#start">início</a>
-                    </li>
-                    <li class="">
-                        <i class="fas fa-exclamation-circle"></i>
-                        <a href="#about">Sobre</a>
-                    </li>
-                    <li class="">
-                        <i class="fas fa-briefcase"></i>
-                        <a href="#jobs">Trabalhos</a>
-                    </li>
-                    <li class="">
-                        <i class="fas fa-fill-drip"></i>
-                        <a href="#skills">Habilidades</a>
-                    </li>
-                </ul>
+                <div>
+                    <ul class="menu_ul">
+                        <li class="">
+                            <a href="#start">
+                                <i class="fas fa-home"></i>
+                                início
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#about">
+                                <i class="fas fa-exclamation-circle">
+                                </i>Sobre
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#jobs">
+                                <i class="fas fa-briefcase"></i>
+                                Trabalhos
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#skills">
+                                <i class="fas fa-fill-drip"></i>
+                                Habilidades
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr>
+                <br>
+                <div class="social_midia">
+                    <h3>mídia social</h3>
+                    <br>
+
+                    <ul>
+                        <li>
+                            <a class="" aria-current="page" href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" aria-current="page" href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" aria-current="page" href="#">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" aria-current="page" href="#">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </nav>
@@ -84,21 +127,34 @@
                     Sou Product Designer apaixonado por criar soluções <br> que melhorem a qualidade de vida das
                     pessoas.
                 </p>
-                <div class="">
-                    <a class="" aria-current="page" href="#">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="" aria-current="page" href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="" aria-current="page" href="#">
-                        <i class="fab fa-behance"></i>
-                    </a>
-                    <a class="" aria-current="page" href="#">
-                        <i class="fab fa-dribbble"></i>
-                    </a>
+
+                <div>
+                    <ul>
+                        <li>
+                            <a class="" aria-current="page" href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" aria-current="page" href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" aria-current="page" href="#">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" aria-current="page" href="#">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+
                 <a type="button" class="my_btn" href="#contact">Contate-me</a>
+
             </div>
 
             <div>

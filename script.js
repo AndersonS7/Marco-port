@@ -1,27 +1,44 @@
 const logo = document.querySelector('#logo');
 const img_second = document.querySelector('#img_second');
+const btn_mobile = document.querySelector("#btn_mobile");
+let mobileBtnOn = false;
 
 const observer = new ResizeObserver(entries => {
     for (let entry of entries) {
         const { width } = entry.contentRect;
 
-        if (width <= 768) {
-            logo.src = './assets/icons/logo-white.svg';
-            img_second.src = './assets/imgs/mobile/secundaria-rosa.png';
-        } else {
+        if (width <= 768 && mobileBtnOn) {
+
             logo.src = './assets/icons/logo.svg';
-            img_second.src = './assets/imgs/web/secundária-rosa.png';
+            document.body.style.backgroundImage = "none";
+
+        } else if (width <= 768 && mobileBtnOn == false) {
+            document.body.style.backgroundImage = "url(./assets/imgs/Elementos/bg-mobile-rosa.png)";
+            logo.src = './assets/icons/logo-white.svg';
+        }
+        else {
+            logo.src = './assets/icons/logo.svg';
+            document.body.style.backgroundImage = "url(./assets/imgs/Elementos/bg-rosa.svg)";
         }
     }
 });
 
 function menuShow() {
-    let menuMobile = document.querySelector('.menu_mobile');
-    console.log(menuMobile)
+    const menuMobile = document.querySelector('.menu_mobile');
+
     if (menuMobile.classList.contains('open')) {
         menuMobile.classList.remove('open');
+        mobileBtnOn = false;
+
+        btn_mobile.classList.add('btn_disabled');
+        btn_mobile.classList.remove('btn_enabled');
+
     } else {
         menuMobile.classList.add('open');
+        mobileBtnOn = true;
+
+        btn_mobile.classList.add('btn_enabled');
+        btn_mobile.classList.remove('btn_disabled');
     }
 }
 
