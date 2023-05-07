@@ -35,35 +35,110 @@
     width: 100%;
 }
 
-.container .my_btn1 {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    width: 65%;
-    height: 3.5rem;
-    max-width: 100%;
-    background-color: var(--color-white);
-    border-radius: 0.625rem;
-    margin: auto;
-    position: relative;
-    bottom: 4.375rem;
-}
-
-.container .my_btn1 a {
-    text-decoration: none;
-    font-family: 'Viga', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.224rem;
-    color: var(--color-margenta);
-}
-
-/* START CONTETN */
-.content_about{
+/******************** ABOUT CONTETN *******************/
+.content_about {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 130vh;
+}
+
+.text_about h3,
+.content_jobs h3 {
+    font-family: 'Viga', sans-serif;
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 2.52rem;
+    color: var(--color-margenta);
+    margin-top: 5rem;
+}
+
+.text_about h3::before,
+.content_jobs h3::before {
+    content: "";
+    display: block;
+    border-top: 5px solid var(--color-margenta);
+    border-radius: 2.063rem;
+    width: 10%;
+    margin-bottom: 0.625rem;
+    ;
+}
+
+.text_about p,
+.content_jobs p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: var(--color-blue1);
+    margin-top: 1.5rem;
+}
+
+.content_about img {
+    max-width: 100%;
+    width: 100%;
+    padding-top: 1.875rem;
+}
+
+/******************** JOBS CONTETN ********************/
+.content_jobs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 120vh;
+    text-align: center;
+}
+
+.content_jobs h3::before {
+    margin: auto;
+}
+
+.content_jobs p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: var(--color-blue1);
+    margin-top: 1.5rem;
+}
+
+/******************** SKILLS CONTETN ********************/
+.content_skills {
+    max-width: 100%;
+    width: 100%;
+    background-color: var(--color-margenta);
+}
+
+.content_skills ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    overflow: scroll;
+    height: 16.375rem;
+}
+
+.content_skills ul li img {
+    width: 4rem;
+    height: auto;
+    margin-right: 50px;
+}
+
+::-webkit-scrollbar {
+    height: 0px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-margenta);
+}
+
+/* ########################################## */
+
+@media screen and (max-width: 393px) {
+    .text_start h1 {
+        font-size: 2.5rem;
+    }
 }
 
 /* ########################################## */

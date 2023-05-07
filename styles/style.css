@@ -63,6 +63,54 @@ body {
     padding-right: 11.25rem;
 }
 
+/* MY BUTTONS */
+.my_btn1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 3.5rem;
+    max-width: 100%;
+    background-color: var(--color-white);
+    border-radius: 0.625rem;
+    margin: auto;
+    position: relative;
+    bottom: 4.375rem;
+}
+
+.my_btn1 a {
+    text-decoration: none;
+    font-family: 'Viga', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.224rem;
+    color: var(--color-margenta);
+}
+
+.my_btn2 {
+    width: 95%;
+    background-color: var(--color-margenta);
+    position: relative;
+    top: 1.375rem;
+}
+
+.my_btn2 a {
+    color: var(--color-white);
+}
+
+.my_btn3 {
+    width: 95%;
+    background-color: transparent;
+    position: relative;
+    top: 1.375rem;
+
+    border: 0.125rem solid var(--color-margenta);
+}
+
+.my_btn3 a {
+    color: var(--color-margenta);
+}
+
 /* ICONS */
 .media_content {
     margin-bottom: 2.5rem;
@@ -110,4 +158,11 @@ body {
 .midia_ul2 li a i{
     color: var(--color-white);
     border: 0.094rem solid var(--color-white);
+}
+
+/* ########################################## */
+:root {
+    --color-white: #FAFAFA;
+    --color-margenta: #FD1874;
+    --color-blue1: #212330;
 }

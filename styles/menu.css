@@ -124,6 +124,18 @@
     }
 }
 
+@media screen and (max-width: 393px){
+    body {
+        background-image: url("./assets/imgs/Elementos/bg-mobile-rosa.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 24.563rem 55.5rem;
+        padding: 0px;
+        margin: 0px;
+        overflow-x: hidden;
+    }
+}
+
 /* ########################################## */
 :root {
     --color-white: #FAFAFA;

@@ -176,10 +176,11 @@
 
     <section id="about" class="container">
         <div class="content_about">
-            <div>
+            <div class="text_about">
                 <h3>Sobre mim</h3>
                 <p>
-                    Me chamo Marcos Carlos sou Product Designer apaixonado por criar soluções, sempre tive uma
+                    Me chamo <strong>Marcos Carlos</strong> sou Product Designer apaixonado por criar soluções, sempre
+                    tive uma
                     paixão
                     por tecnologia e design, o que me levou a estudar e seguir carreira nesta área.
                     Aprendi a criar soluções visuais impactantes e eficazes, levando em conta as necessidades do
@@ -188,50 +189,54 @@
             </div>
 
             <div>
-                <img class="" src="./assets/imgs/web/secundária-rosa.png" alt="Marcos Carlos">
-                <div class="my_btn1">
-                    <a type="buttom" class="" href="#">Saiba mais</a>
+                <picture>
+                    <source srcset="./assets/imgs/mobile/secundaria-rosa.png" media="(max-width: 768px)">
+                    <source srcset="./assets/imgs/web/rosa.png">
+                    <img class="" src="./assets/imgs/mobile/secundaria-rosa.png" alt="Marcos Carlos">
+                </picture>
+                <div class="my_btn1 my_btn2">
+                    <a type="buttom" href="#">Saiba mais</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <div class="">
+    <section id="jobs" class="container">
+        <div class="content_jobs">
+            <h3>Trabalhos</h3>
+            <p>
+                Durante minha jornada de estudos tive a oportunidade de trabalhar em alguns projetos real que me
+                proporcionou uma experiência incrível como Product Design.
+            </p>
+
             <div class="">
-                <h3>
-                    Trabalhos
-                </h3>
-                <p>
-                    Durante minha jornada de estudos tive a oportunidade de trabalhar em alguns projetos real que me
-                    proporcionou uma experiência incrível como Product Design.
-                </p>
-                <div class="">
-                    <img src="./assets/imgs/Elementos/job-01.svg" alt="primeiro projeto">
-                    <img src="./assets/imgs/Elementos/job-02.svg" alt="segundo projeto">
-                </div>
-
-                <p>
-                    Todos os projetos estão disponíveis no meu portifólio, acesse para ver todos os projetos
-                    completos.
-                </p>
-                <a type="buttom" class="my_btn" href="#">Ver projetos</a>
-
+                <img src="./assets/imgs/Elementos/job-01.svg" alt="primeiro projeto">
+                <img src="./assets/imgs/Elementos/job-02.svg" alt="segundo projeto">
             </div>
+
+            <p>
+                Todos os projetos estão disponíveis no meu portifólio, acesse para ver todos os projetos
+                completos.
+            </p>
+
+            <div class="my_btn1 my_btn3">
+                <a type="buttom" href="#">Ver projetos</a>
+            </div>
+
         </div>
     </section>
 
-    <section>
-        <div class="">
-            <div>
-                <img src="./assets/icons/notion.png" alt="notion">
-                <img src="./assets/icons/figma.png" alt="figma">
-                <img src="./assets/icons/html.png" alt="html">
-                <img src="../assets/icons/css.png" alt="css">
-                <img src="./assets/icons/illustrator.png" alt="ilustator">
-                <img src="./assets/icons/adobe-photoshop.png" alt="photoshop">
-                <img src="./assets/icons/vscode.png" alt="vscode">
-            </div>
+    <section id="skills">
+        <div class="content_skills">
+            <ul>
+                <li><img src="./assets/icons/notion.png" alt="notion"></li>
+                <li><img src="./assets/icons/figma.png" alt="figma"></li>
+                <li><img src="./assets/icons/html.png" alt="html"></li>
+                <li><img src="../assets/icons/css.png" alt="css"></li>
+                <li><img src="./assets/icons/illustrator.png" alt="ilustator"></li>
+                <li><img src="./assets/icons/adobe-photoshop.png" alt="photoshop"></li>
+                <li><img src="./assets/icons/vscode.png" alt="vscode"></li>
+            </ul>
         </div>
     </section>
 
