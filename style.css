@@ -1,12 +1,29 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* FONTS CONFIG. */
+@font-face {
+    font-family: 'PPNeueMontreal-Light';
+    src: url("./assets/fonts/font2/NeueMontreal-Light.otf");
+}
+
+@font-face {
+    font-family: 'PPNeueMontreal-Regular';
+    src: url("./assets/fonts/font2/NeueMontreal-Regular.otf");
+}
+
+@font-face {
+    font-family: 'PPNeueMontreal-Medium';
+    src: url("./assets/fonts/font2/NeueMontreal-Medium.otf");
+}
+
 @font-face {
     font-family: 'PPNeueMontreal-Bold';
-    src: url(./assets/fonts/PPNeue_Montreal/OTF/PPNeueMontreal-Bold.otf);
+    src: url("./assets/fonts/font2/NeueMontreal-Bold.otf");
 }
 
 h1,
@@ -14,8 +31,146 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p,
-a {
+h6 {
     font-family: 'PPNeueMontreal-Bold';
+}
+
+p {
+    font-family: 'PPNeueMontreal-Regular';
+}
+
+a {
+    font-family: 'PPNeueMontreal-light';
+}
+
+/* ########################################## */
+
+/* body {
+    background-image: url("./assets/imgs/Elementos/bg-rosa.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: initial;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+} */
+
+/* ########################################## */
+
+.container {
+    padding-left: 11.25rem;
+    padding-right: 11.25rem;
+}
+
+body {
+    background-color: rgb(48, 46, 46);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+#menu_control_mobile {
+    padding-top: 1.906rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 100%;
+    width: 100%;
+}
+
+.meu_list ul {
+    display: flex;
+    justify-content: space-between;
+    width: 31rem;
+    list-style: none;
+}
+
+.meu_list ul li a,
+.meu_list ul li i {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+
+/* MOBILE MENU */
+.btn_mobile {
+    display: none;
+}
+
+.menu_mobile {
+    display: none;
+}
+
+.btn_mobile button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        margin: auto;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    #menu_control_mobile {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 1.875rem;
+    }
+
+    .menu_mobile ul{
+        margin-top: 1.875rem;
+        margin-bottom: 7.813rem;
+        list-style: none;
+    }
+
+    .menu_mobile ul li {
+        margin-top: 3.25rem;
+    }
+
+    .menu_mobile ul li a {
+        text-decoration: none;
+        color: var(--color-margenta);
+    }
+
+    .menu_mobile ul li i {
+        margin-right: 1.614rem;
+        color: var(--color-margenta);
+    }
+
+    .menu_mobile hr {
+        border-color: var(--color-blue1);
+        opacity: 0.2;
+    }
+
+    .meu_list {
+        display: none;
+    }
+
+    .btn_mobile {
+        display: block;
+    }
+
+    .open {
+        display: block;
+    }
+}
+
+/* ########################################## */
+:root {
+    --color-white: #FAFAFA;
+    --color-margenta: #FD1874;
+    --color-blue1: #212330;
 }
