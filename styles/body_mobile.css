@@ -107,18 +107,17 @@
     max-width: 100%;
     width: 100%;
     background-color: var(--color-margenta);
+    margin-top: 2rem;
 }
 
 .content_skills ul {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
-    overflow: scroll;
+    overflow: auto;
     height: 16.375rem;
-}
-
-.content_skills ul li {
-    margin: auto;
+    width: 100%;
 }
 
 .content_skills ul li img {
