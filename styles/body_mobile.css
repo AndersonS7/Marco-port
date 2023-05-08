@@ -133,11 +133,133 @@
     background-color: var(--color-margenta);
 }
 
+/******************** CALL CONTETN ********************/
+.content_call {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    margin-top: 3.5rem;
+}
+
+.text_content h3 {
+    font-family: 'Viga', sans-serif;
+    font-weight: 400;
+    font-size: 1.875rem;
+    text-align: center;
+    line-height: 2.52rem;
+    color: var(--color-margenta);
+}
+
+.text_content p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    text-align: center;
+    line-height: 1.5rem;
+    color: var(--color-margenta);
+    margin-top: 1.5rem;
+}
+
+#img_call_x,
+#img_call_square,
+#img_call_triangle,
+#img_call_c {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#img_call_x {
+    position: relative;
+    bottom: 21.3rem;
+}
+
+#img_call_square {
+    position: relative;
+    bottom: 23rem;
+    left: 20.5rem;
+}
+
+#img_call_triangle {
+    position: relative;
+    top: 1.8rem;
+    left: .5rem;
+}
+
+#img_call_c {
+    position: relative;
+    left: 20.5rem;
+}
+
+/******************** FOOTER CONTETN ********************/
+.content_contact {
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+    padding-top: 5rem;
+    padding-left: 1.5rem;
+    gap: 3rem;
+}
+
+.menu_footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.menu_footer h3 {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    color: var(--color-blue1);
+}
+
+.menu_footer ul {
+    list-style: none;
+}
+
+.menu_footer ul li a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: var(--color-blue1);
+} 
+
+footer hr{
+    border-color: var(--color-blue1);
+    opacity: 0.2;
+}
+
+
+footer h3 {
+    text-transform: uppercase;
+    font-family: 'PPNeueMontreal-Regular';
+    font-size: 1rem;
+    color: var(--color-blue1);
+}
+
+.media_content h3 {
+    margin: 0;
+}
+
 /* ########################################## */
 
 @media screen and (max-width: 393px) {
     .text_start h1 {
         font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .text_start h1 {
+        font-size: 2.5rem;
+    }
+
+    .menu_footer {
+        display: none;
     }
 }
 

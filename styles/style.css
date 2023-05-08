@@ -92,6 +92,7 @@ body {
     background-color: var(--color-margenta);
     position: relative;
     top: 1.375rem;
+    margin: 0;
 }
 
 .my_btn2 a {
