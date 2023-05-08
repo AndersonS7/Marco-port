@@ -111,22 +111,25 @@
 
 .content_skills ul {
     display: flex;
-    justify-content: center;
     align-items: center;
     list-style: none;
     overflow: scroll;
     height: 16.375rem;
 }
 
+.content_skills ul li {
+    margin: auto;
+}
+
 .content_skills ul li img {
     width: 4rem;
     height: auto;
-    margin-right: 50px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 ::-webkit-scrollbar {
     height: 0px;
-
 }
 
 ::-webkit-scrollbar-thumb {
@@ -231,9 +234,9 @@
     font-size: 1rem;
     line-height: 2rem;
     color: var(--color-blue1);
-} 
+}
 
-footer hr{
+footer hr {
     border-color: var(--color-blue1);
     opacity: 0.2;
 }
