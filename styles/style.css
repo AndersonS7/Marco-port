@@ -110,6 +110,8 @@ body {
 
 .my_btn3 a {
     color: var(--color-margenta);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 /* ICONS */
