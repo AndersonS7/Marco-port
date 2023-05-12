@@ -69,18 +69,44 @@
     color: var(--color-white);
 }
 
-/* background para telas maiores */
-body {
-    background-image: url("./assets/imgs/Elementos/bg-rosa.svg");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: initial;
-    padding: 0px;
-    margin: 0px;
-    overflow-x: hidden;
+/* TELAS MÉDIANAS E GRANDES */
+@media screen and (min-width: 769px) {
+    body {
+        background-image: url("./assets/imgs/Elementos/bg-rosa.svg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: 65%;
+        padding: 0px;
+        margin: 0px;
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 10%;
+        margin: auto;
+    }
+
+    #menu_control_mobile {
+        align-items: center;
+    }
+
+    .meu_list ul {
+        width: 23rem;
+    }
+
+    .meu_list ul li a,
+    .meu_list ul li i {
+        font-family: 'PPNeueMontreal-Regular';
+    }
+
+    .meu_list ul li a:hover {
+        border-bottom: 2px solid var(--color-white);
+    }
+
 }
 
-/* estilização do menu em telas menores que 768px */
+/* TELAS PEQUENAS */
 @media screen and (max-width: 768px) {
     body {
         background-image: url("./assets/imgs/Elementos/bg-mobile-rosa.png");
@@ -93,9 +119,8 @@ body {
     }
 
     .container {
-        margin: 0;
-        padding: 0;
-        width: 90%;
+        max-width: 100%;
+        padding: 0 10%;
         margin: auto;
     }
 
@@ -163,7 +188,7 @@ body {
     }
 }
 
-@media screen and (max-width: 393px){
+@media screen and (max-width: 393px) {
     body {
         background-image: url("./assets/imgs/Elementos/bg-mobile-rosa.png");
         background-repeat: no-repeat;
