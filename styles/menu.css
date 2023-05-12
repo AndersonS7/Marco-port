@@ -1,3 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: none;
+}
+
+@font-face {
+    font-family: 'PPNeueMontreal-Light';
+    src: url("../assets/fonts/font2/NeueMontreal-Light.otf");
+}
+
+@font-face {
+    font-family: 'PPNeueMontreal-Regular';
+    src: url("../assets/fonts/font2/NeueMontreal-Regular.otf");
+}
+
+@font-face {
+    font-family: 'PPNeueMontreal-Medium';
+    src: url("../assets/fonts/font2/NeueMontreal-Medium.otf");
+}
+
+@font-face {
+    font-family: 'PPNeueMontreal-Bold';
+    src: url("../assets/fonts/font2/NeueMontreal-Bold.otf");
+}
+
 /* ESTILIZAÇÃO DO MENU (MOBILE E WEB) */
 .menu {
     display: flex;
@@ -42,6 +69,18 @@
     color: var(--color-white);
 }
 
+/* background para telas maiores */
+body {
+    background-image: url("./assets/imgs/Elementos/bg-rosa.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: initial;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+/* estilização do menu em telas menores que 768px */
 @media screen and (max-width: 768px) {
     body {
         background-image: url("./assets/imgs/Elementos/bg-mobile-rosa.png");
