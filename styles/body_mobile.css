@@ -309,7 +309,7 @@ footer h3 {
 }
 
 /* faz o botão aparecer em baixo da imagem da primeira seção em telas menores */
-#my_btn1{
+#my_btn1 {
     display: block;
 }
 
@@ -346,27 +346,16 @@ footer h3 {
 .midia_ul1 li a {
     text-align: center;
     text-decoration: none;
-    color: var(--color-margenta);
+    color: var(--color-white);
 }
 
 .midia_ul1 li a i {
     width: 2.125rem;
     height: 2.125rem;
     padding-top: .5rem;
-    border: 0.094rem solid var(--color-margenta);
+    border: 0.094rem solid var(--color-white);
     border-radius: 50%;
 }
-
-.midia_ul2 li a {
-    color: var(--color-white);
-}
-
-.midia_ul2 li a i {
-    color: var(--color-white);
-    border: 0.094rem solid var(--color-white);
-}
-
-/********    ESTILIZAÇÃO TELAS MAIORES     **********/
 
 
 /* ################## @media ######################## */
@@ -389,40 +378,65 @@ footer h3 {
         display: none;
     }
 
+    /* ########## SEÇÃO START ################### */
+
+    #start {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10%;
+        height: 60vh;
+    }
+
+    #start img {
+        max-width: 100%;
+        margin-left: 20%;
+    }
+
     .text_start h1 {
+        font-family: 'PPNeueMontreal-Bold';
         font-size: 2.5rem;
+        color: var(--color-margenta);
+        width: 130%;
     }
 
-    .menu_footer {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 765px) {
-    .text_start h1 {
-        font-size: 2.5rem;
+    .text_start h2 {
+        font-family: 'PPNeueMontreal-Regular';
+        color: var(--color-margenta);
     }
 
-    .menu_footer {
-        display: none;
+    .text_start p {
+        font-family: 'PPNeueMontreal-Regular';
+        color: var(--color-blue1);
+        max-width: 200%;
+        width: 200%;
     }
-
+    
+    /* ########## SEÇÃO ABOUT ################### */
     .content_about {
         display: flex;
-        flex-direction: column;
-        margin-top: 45rem;
+        flex-direction: row;
     }
 
-    .content_jobs {
-        display: flex;
-        flex-direction: column;
-        margin-top: 10rem;
+    
+
+
+    /* ########## SEÇÃO START ################### */
+
+    .menu_footer {
+        display: none;
     }
 
-    .content_skills {
-        display: flex;
-        flex-direction: column;
-        margin-top: 15rem;
+
+    /* ########## ICONS ################### */
+
+    .midia_ul2 li a {
+        color: var(--color-margenta);
+    }
+
+    .midia_ul2 li a i {
+        color: var(--color-margenta);
+        border: 0.094rem solid var(--color-margenta);
     }
 }
 
