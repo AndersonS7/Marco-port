@@ -41,11 +41,14 @@
 }
 
 /******************** ABOUT CONTETN *******************/
+#about {
+    margin-top: 10rem;
+}
+
 .content_about {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 130vh;
 }
 
 .text_about h3,
@@ -90,7 +93,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 120vh;
+    height: 90vh;
     text-align: center;
 }
 
@@ -357,7 +360,6 @@ footer h3 {
     border-radius: 50%;
 }
 
-
 /* ################## @media ######################## */
 
 @media screen and (max-width: 393px) {
@@ -378,26 +380,31 @@ footer h3 {
         display: none;
     }
 
-    /* ########## SEÇÃO START ################### */
-
+    /* ****** SEÇÃO START ****** */
     #start {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 10%;
-        height: 60vh;
+        margin-top: 5%;
     }
 
     #start img {
-        max-width: 100%;
-        margin-left: 20%;
+        max-width: 120%;
+        width: 62.375rem;
+        margin-left: 10%;
+        height: auto;
+    }
+
+    .content_start {
+        width: 100%;
     }
 
     .text_start h1 {
         font-family: 'PPNeueMontreal-Bold';
         font-size: 2.5rem;
         color: var(--color-margenta);
-        width: 130%;
+        max-width: 100%;
+        width: 100%;
     }
 
     .text_start h2 {
@@ -408,35 +415,92 @@ footer h3 {
     .text_start p {
         font-family: 'PPNeueMontreal-Regular';
         color: var(--color-blue1);
-        max-width: 200%;
-        width: 200%;
+        max-width: 100%;
+        width: 100%;
     }
-    
-    /* ########## SEÇÃO ABOUT ################### */
+
+    .content_start #btnScreen_G {
+        width: 55%;
+    }
+
+    /* ****** SEÇÃO ABOUT ****** */
     .content_about {
         display: flex;
+        justify-content: start;
         flex-direction: row;
+        width: 100%;
     }
 
-    
+    .content_about img {
+        max-width: 90%;
+        width: 52.921rem;
+        height: auto;
+        margin-left: 40%;
+    }
 
+    .text_about {
+        max-width: 100%;
+        width: 80%;
+    }
 
-    /* ########## SEÇÃO START ################### */
+    .text_about #btnScreen_G {
+        max-width: 70%;
+    }
+
+    .text_about h3 {
+        font-family: 'PPNeueMontreal-Bold';
+        color: var(--color-margenta);
+        margin-top: 6rem;
+    }
+
+    .text_about h3::before {
+        width: 15%;
+    }
+
+    .text_about p {
+        font-family: 'PPNeueMontreal-Regular';
+        max-width: 100%;
+    }
+
+    /* ****** SEÇÃO JOBS ****** */
+
+    .img_jobs {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .img_jobs img {
+        max-width: 100%;
+        width: 60%;
+    }
+
+    .content_jobs h3 {
+        font-family: 'PPNeueMontreal-Bold';
+    }
+
+    .content_jobs h3::before {
+        width: 7%;
+    }
+
+    /* ****** SEÇÃO FOOTER ****** */
 
     .menu_footer {
         display: none;
     }
+}
 
-
-    /* ########## ICONS ################### */
-
-    .midia_ul2 li a {
-        color: var(--color-margenta);
+@media screen and (min-width: 1440px) {
+    .content_jobs {
+        height: 110vh;
     }
 
-    .midia_ul2 li a i {
-        color: var(--color-margenta);
-        border: 0.094rem solid var(--color-margenta);
+    .content_about p {
+        width: 70%;
+    }
+
+    #jobs {
+        margin-top: 8%;
     }
 }
 
@@ -445,4 +509,21 @@ footer h3 {
     --color-white: #FAFAFA;
     --color-margenta: #FD1874;
     --color-blue1: #212330;
+}
+
+.container {
+    max-width: 100rem;
+    width: 100%;
+    padding: 0 15%;
+}
+
+/* ******* ICONS ******* */
+
+.midia_ul2 li a {
+    color: var(--color-margenta);
+}
+
+.midia_ul2 li a i {
+    color: var(--color-margenta);
+    border: 0.094rem solid var(--color-margenta);
 }
