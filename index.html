@@ -168,7 +168,12 @@
         </div>
 
         <div>
-            <img src="./assets/imgs/web/rosa.png" alt="Marcos Carlos">
+            <picture>
+                <source srcset="./assets/imgs/web/rosa.png" media="(max-width: 1470px)">
+                <source srcset="./assets/imgs/mobile/secundaria-rosa.png">
+                <img src="./assets/imgs/mobile/secundaria-rosa.png" alt="Marcos Carlos">
+            </picture>
+
             <div id="btnScreen_L">
                 <a type="button" class="my_btn1" href="#contact">Contate-me</a>
             </div>
@@ -194,14 +199,7 @@
             </div>
 
             <div>
-                <picture>
-                    <source srcset="./assets/imgs/mobile/secundaria-rosa.png" media="(max-width: 768px)">
-                    <source srcset="./assets/imgs/web/secundária-rosa.png">
-                    <img class="" src="./assets/imgs/web/secundária-rosa.png" alt="Marcos Carlos">
-                </picture>
-                <div id="btnScreen_L">
-                    <a type="buttom" class="my_btn1 my_btn2" href="#">Saiba mais</a>
-                </div>
+                <img id="img_second_about" src="./assets/imgs/web/secundária-rosa.png" alt="Marcos Carlos">
             </div>
         </div>
     </section>
@@ -263,7 +261,7 @@
 
     <hr>
 
-    <footer>
+    <footer class="container">
         <div class="content_contact">
             <div>
                 <h3>CONTATO</h3>

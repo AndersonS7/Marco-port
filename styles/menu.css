@@ -76,7 +76,8 @@
         background-image: url("./assets/imgs/Elementos/bg-rosa.svg");
         background-repeat: no-repeat;
         background-position: right top;
-         background-size:  65%; /*75.886rem 135rem; */
+        background-size: 65%;
+        /*75.886rem 135rem; */
         padding: 0px;
         margin: 0px;
         overflow-x: hidden;
@@ -198,6 +199,23 @@
         padding: 0px;
         margin: 0px;
         overflow-x: hidden;
+    }
+}
+
+@media screen and (min-width: 1470px) {
+    body {
+        background-image: url("#");
+        background-size: 0%;
+    }
+
+    .meu_list ul li a,
+    .meu_list ul li i {
+        text-decoration: none;
+        color: var(--color-margenta);
+    }
+
+    .meu_list ul li a:hover {
+        border-bottom: 2px solid var(--color-margenta);
     }
 }
 
