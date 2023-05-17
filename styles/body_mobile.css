@@ -337,12 +337,14 @@ footer h3 {
     max-width: 100%;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin-top: 1rem;
 }
 
 .midia_ul1 li {
     margin-right: 1rem;
+    margin-top: 1rem;
 }
 
 .midia_ul1 li a {
@@ -514,7 +516,7 @@ footer h3 {
 
     .content_jobs {
         justify-content: start;
-        height: 60vh;
+        height: 80vh;
     }
 
     #start img {
