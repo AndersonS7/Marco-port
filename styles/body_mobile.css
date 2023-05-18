@@ -1,6 +1,6 @@
 /********    ESTILIZAÇÃO MOBILE     **********/
 .container {
-    padding-left: 10% 10%;
+    padding-left: 0 10%;
 }
 
 /* START CONTETN */
@@ -378,6 +378,10 @@ footer h3 {
 
 @media screen and (min-width: 769px) {
 
+    .container {
+        padding: 0 5%;
+    }
+
     /* ativa botão que vai aparecer em baixo dos icones de rede social da primeira seção em telas maiores */
     #btnScreen_G {
         display: block;
@@ -491,6 +495,15 @@ footer h3 {
         width: 7%;
     }
 
+    /* ****** SEÇÃO SKILLS ****** */
+    .content_skills ul {
+        justify-content: center;
+    }
+
+    .content_skills ul li {
+        padding: 0 1.5%;
+    }
+
     /* ****** SEÇÃO FOOTER ****** */
 
     .menu_footer {
@@ -498,7 +511,16 @@ footer h3 {
     }
 }
 
+@media screen and (min-width: 990px) {
+    .container {
+        max-width: 100rem;
+        width: 100%;
+        padding: 0 15%;
+    }
+}
+
 @media screen and (min-width: 1440px) {
+
     .content_jobs {
         height: 110vh;
     }
@@ -514,11 +536,6 @@ footer h3 {
 
 @media screen and (min-width: 1470px) {
 
-    .content_jobs {
-        justify-content: start;
-        height: 80vh;
-    }
-
     #start img {
         width: 50rem;
     }
@@ -533,12 +550,6 @@ footer h3 {
     --color-white: #FAFAFA;
     --color-margenta: #FD1874;
     --color-blue1: #212330;
-}
-
-.container {
-    max-width: 100rem;
-    width: 100%;
-    padding: 0 15%;
 }
 
 /* ******* ICONS ******* */
